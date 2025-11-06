@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    background: #000000;
+}
+
+/* Offset for fixed navbar */
+section {
+    scroll-margin-top: 70px;
+    /* Same as your navbar height */
+}
+
+
+/* ========================================
+   NAVIGATION BAR - HIGHEST Z-INDEX
+   ======================================== */
+nav {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    /* HIGHEST - always on top */
+    backdrop-filter: blur(10px);
+    pointer-events: all;
+    /* CRITICAL: Enable clicks */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    position: relative;
+    z-index: 100000;
+    pointer-events: all;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;
+    position: relative;
+    z-index: 100001;
+    pointer-events: all;
+}
+
+.nav-menu {
+    font-size: 18px;
+    display: flex;
+    list-style: none;
+    gap: 3px;
+    align-items: center;
+    position: relative;
+    z-index: 100001;
+    pointer-events: all;
+}
+
+.nav-menu li {
+    padding: 10px 20px;
+    position: relative;
+    z-index: 100002;
+    pointer-events: all;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 100003;
+    pointer-events: all;
+    /* CRITICAL: Enable link clicks */
+}
+
+/* Only text hover effect */
+.nav-menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.nav-menu li a:hover {
+    color: #667eea;
+    transform: translateY(-3px);
+}
+
+.nav-menu li a:hover::before {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    position: relative;
+    z-index: 100004;
+    pointer-events: all;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.hamburger.active span:nth-child(1) {
+    background-color: #764ba2;
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+
+
+/*  */
+/*  */
+/* ========================================
+   PARTICLE BACKGROUND - MUST BE BELOW NAV
+   ======================================== */
+
+.particle-portfolio-body {
+    margin: 0;
+    padding: 0;
+    background: #000000 !important;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#particle-background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* VERY LOW - behind everything */
+    pointer-events: none;
+    /* CRITICAL: Don't block clicks */
+}
+
+/* All content above particles */
+.particle-portfolio-body>*:not(#particle-background-canvas) {
+    position: relative;
+    z-index: 10;
+}
+
+/*  */
+/*  */
+.heading-font {
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.about-font {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* ========================================
+   ROTATION ANIMATIONS for navigation icons
+   ======================================== */
+/* 🌀 Normal rotation (clockwise) */
+.rotate-slow {
+    animation: rotate360 10s linear infinite;
+}
+
+/* 🔁 Reverse rotation (anti-clockwise) */
+.rotate-slow-reverse {
+    animation: rotate360reverse 10s linear infinite;
+}
+
+/* 🔧 Keyframes */
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate360reverse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Tablet and Mobile Styles */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        padding: 20px 0;
+        gap: 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        z-index: 99998;
+        pointer-events: all;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-menu li a:hover {
+        color: #667eea;
+        transform: none;
+    }
+}
+
+/* Tablet specific adjustments */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .nav-container {
+        padding: 0 30px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+}
+
+/* Small mobile */
+@media screen and (max-width: 480px) {
+    .nav-container {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-menu {
+        top: 60px;
+    }
+
+    .nav-menu li a {
+        font-size: 16px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .nav-menu li {
+        padding: 12px 25px;
+    }
+}
+
+
+/* ========================================
+   client review styles
+   ======================================== */
+
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* 🔹 New horizontal slide animation (Left ➜ Right) */
+/* @keyframes horizontalSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+} */
+
+/* 🔹 New class for horizontal effect */
+/* .slide-horizontal {
+    animation: horizontalSlide 0.6s ease-in-out;
+} */
+
+/*  */
+/*  */
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔹 Horizontal slide animation (Left ➜ Right) */
+@keyframes horizontalSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* 🔹 Horizontal slide effect */
+.slide-horizontal {
+    animation: horizontalSlide 2s ease-out;
+}
+
+/* 🔹 Smooth display transition */
+.review-card {
+    transition: opacity 1s ease;
+}
