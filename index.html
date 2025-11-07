@@ -21,6 +21,9 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- saipper dns -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 
 
@@ -31,13 +34,13 @@
 
     <nav>
         <div class="nav-container sticky">
-            <div class="logo hover:text-green-400 "> <a href="#Home">MyPortfolio</a> </div>
+            <div class="logo "> <a href="#Home">MyPortfolio</a> </div>
             <ul class="nav-menu heading-font ">
                 <li class=" heading-font "><a href="#Home">Home</a></li>
                 <li class=" heading-font "><a href="#education">Education</a></li>
                 <li class=" heading-font "><a href="#service">Service</a></li>
                 <li class=" heading-font "><a href="#client">Client Review</a></li>
-                <li class=" heading-font "><a href="#contact">Contact Me</a></li>
+                <li class=" heading-font "><a href="#Contact">Contact Me</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -49,7 +52,7 @@
 
     <!-- home section -->
     <section id="Home"
-        class=" lg:pt-[180px] md:m-auto justify-center items-center flex flex-col-reverse md:flex-col-reverse lg:flex-row w-[100%] lg:gap-[40px] xl:gap-[200px] md:p-10  ">
+        class=" lg:pt-[180px] md:m-auto justify-center items-center flex flex-col-reverse md:flex-col-reverse lg:flex-row w-[100%] lg:gap-[40px] xl:gap-[200px] md:p-10 relative z-10 ">
         <!-- text section -->
         <div class=" w-[90%] md:max-w-[100%] lg:max-w-[40%] flex flex-col gap-10">
             <div class="flex flex-col gap-3 mt-[35px] ">
@@ -67,15 +70,11 @@
             </div>
 
             <!-- icon section -->
-            <div class=" text-white">
-                <ul class=" flex gap-5 text-[30px] ">
-                    <i class="fa-brands fa-square-whatsapp hover:cursor-pointer hover:text-green-400"><a
-                            href="#"></a></i>
-                    <i class="fa-brands fa-linkedin hover:cursor-pointer hover:text-blue-500 "> <a href="#"></a></i>
-                    <i class="fa-brands fa-square-facebook hover:cursor-pointer hover:text-blue-600"><a
-                            href="#"></a></i>
-                    <i class="fa-solid fa-envelope hover:cursor-pointer hover:text-red-500 "><a href="#"></a></i>
-                </ul>
+            <div class=" text-white hover:px-1">
+                <a href="Resume of  abu Jisan.pdf" download
+                    class="bg-gray-900 hover:bg-gray-700 text-white px-6 py-3 rounded hover:text-green-600 transition">
+                    Download Resume
+                </a>
             </div>
         </div>
         <!-- image section -->
@@ -84,11 +83,13 @@
 
             <div
                 class="  bg-white w-[300px] h-[300px] xl:w-[350px] xl:h-[350px] rounded-[400px] relative flex items-center justify-center flex-col overflow-hidden ">
+                <!-- color -->
                 <div
-                    class=" rounded-xl w-[420px] h-[250px] bg-blue-800 absolute p-2   items-center justify-center rotate-slow  ">
+                    class=" rounded-xl w-[420px] h-[250px] bg-blue-800 absolute p-2   items-center justify-center rotate-slow ">
                 </div>
+                <!-- color -->
                 <div
-                    class="  rounded-xl w-[400px] h-[250px]  bg-red-600 absolute p-2  items-center justify-center delay-spin rotate-slow-reverse ">
+                    class="  rounded-xl w-[400px] h-[250px] bg-[linear-gradient(189deg,rgba(41,81,60,1)_0%,rgba(87,199,133,1)_50%,rgba(36,209,91,1)_100%)]  absolute p-2  items-center justify-center delay-spin rotate-slow-reverse ">
                 </div>
                 <div class=" absolute p-2 ">
                     <img class="xl:w-[400px] rounded-[400px]" src="img/jisan.png" alt="">
@@ -105,9 +106,9 @@
     <!-- education section -->
 
     <section id="education"
-        class="relative md:pt-[20px] bg-gradient-to-br from-[#1f1c2c] to-[#928dab] text-white mt-[40px] md:mt-[100px]">
-        <div class="max-w-6xl mx-auto px-5 md:px-10 ">
-            <h2 class="text-4xl font-bold text-center mb-16 relative">
+        class="relative md:pt-[20px] bg-gradient-to-br from-[#1f1c2c] to-[#928dab] text-white mt-[40px] md:mt-[100px] z-10 ">
+        <div class="max-w-6xl mx-auto px-5 md:px-10 relative z-10 ">
+            <h2 class="text-4xl font-bold text-center mb-16 relative about-font">
                 Education
                 <span class="block w-20 h-1 bg-emerald-400 mx-auto mt-3 rounded-full"></span>
             </h2>
@@ -124,7 +125,7 @@
                         <div class="md:w-1/2 md:pr-10">
                             <div
                                 class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:mr-10 shadow-lg transition transform hover:-translate-y-2 hover:shadow-emerald-500/30">
-                                <span class="text-emerald-400 font-semibold text-sm">2022 - Present</span>
+                                <span class="text-emerald-400 font-semibold text-sm">2019 - Passed</span>
                                 <h3 class="text-2xl font-semibold mt-2">City Corporation Municipal Model School &
                                     College</h3>
                                 <p class="text-gray-300 text-sm mt-1">Secondary School Certificate(Ssc)</p>
@@ -140,7 +141,7 @@
                         <div class="md:w-1/2 md:pl-10">
                             <div
                                 class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:ml-10 shadow-lg transition transform hover:-translate-y-2 hover:shadow-emerald-500/30">
-                                <span class="text-emerald-400 font-semibold text-sm">2018 - 2021</span>
+                                <span class="text-emerald-400 font-semibold text-sm">2021 - Passed</span>
                                 <h3 class="text-2xl font-semibold mt-2">Chittagong Govt Collegiate College</h3>
                                 <p class="text-gray-300 text-sm mt-1">Higher School Certificate</p>
 
@@ -156,7 +157,7 @@
                         <div class="md:w-1/2 md:pr-10">
                             <div
                                 class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:mr-10 shadow-lg transition transform hover:-translate-y-2 hover:shadow-emerald-500/30">
-                                <span class="text-emerald-400 font-semibold text-sm">2016 - 2018</span>
+                                <span class="text-emerald-400 font-semibold text-sm"> Running </span>
                                 <h3 class="text-2xl font-semibold mt-2">Comilla Victoria University.</h3>
                                 <p class="text-gray-300 text-sm mt-1">Honours</p>
 
@@ -171,8 +172,8 @@
                         <div class="md:w-1/2 md:pl-10">
                             <div
                                 class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:ml-10 shadow-lg transition transform hover:-translate-y-2 hover:shadow-emerald-500/30">
-                                <span class="text-emerald-400 font-semibold text-sm">2018 - 2020</span>
-                                <h3 class="text-2xl font-semibold mt-2">It</h3>
+                                <span class="text-emerald-400 font-semibold text-sm">2016 - 2019</span>
+                                <h3 class="text-2xl font-semibold mt-2">Expert it park</h3>
                                 <p class="text-gray-300 text-sm mt-1">Ads Management</p>
 
                             </div>
@@ -189,10 +190,10 @@
 
 
     <!-- services -->
-    <section id="service" class=" mt-[70px] md:mt-[100px] md:pt-[20px]   w-[100%]">
+    <section id="service" class=" mt-[70px] md:mt-[100px] md:pt-[20px] relative z-10  w-[100%]">
         <div class="max-w-6xl mx-auto px-5 md:px-10  ">
             <!-- Title -->
-            <h2 class="text-4xl text-white font-bold text-center mb-16 relative"> Services
+            <h2 class="text-4xl text-white font-bold text-center mb-16 relative about-font "> Services
                 <span class="block w-20 h-1 bg-emerald-400 mx-auto mt-3 rounded-full"></span>
             </h2>
 
@@ -339,133 +340,318 @@
         </div>
     </section>
 
+
     <!-- review Section -->
+    <section class="py-14 relative z-10 " id="client">
+        <div class=" max-w-6xl mx-auto px-4 text-center ">
 
-
-
-    <section class="py-16" id="client">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-
-            <h2 class="text-4xl text-white font-bold text-center mb-10 relative">What My Clients Say
+            <h2 class="text-4xl text-white font-bold text-center mb-10 relative about-font ">What My Clients Say
                 <span class="block w-30 lg:w-50 h-1 bg-emerald-400 mx-auto mt-3 lg:mt-5 rounded-full"></span>
             </h2>
             <p class="text-gray-400 mb-10">Real reviews from amazing people I’ve worked with</p>
+        </div>
 
-            <!-- Review Grid -->
-            <div id="review-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-                <!-- Card 1 -->
-                <div
-                    class=" w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white  hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:mr-10 shadow-lg  transform hover:-translate-y-2 hover:shadow-emerald-500/30 ">
-                    <div class="flex items-center mb-4 ">
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
                         <div
-                            class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex            items-center justify-center text-white font-bold text-lg mr-4">
-                            AR
-                        </div>
-                        <div class="text-left ">
-                            <h3 class="font-semibold text-white">A. Rahman</h3>
-                            <p class="text-sm text-slate-300">CEO — Webify</p>
+                            class="w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-500/30 max-w-md">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg mr-4">
+                                    AR
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-white about-font ">A. Rahman</h3>
+                                    <p class="text-sm text-slate-300">CEO — Webify</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed">"Rider transformed our old website into a
+                                modern, high-converting design. Super smooth communication and delivery."</p>
+                            <div class="mt-3 text-yellow-400">★★★★★</div>
                         </div>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">“Rider transformed our old website into a
-                        modern,
-                        high-converting design. Super smooth communication and delivery.”</p>
-                    <div class="mt-3 text-yellow-400">★★★★★</div>
-                </div>
 
-                <!-- Card 2 -->
-                <div
-                    class=" w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white  hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:mr-10 shadow-lg  transform hover:-translate-y-2 hover:shadow-emerald-500/30 ">
-                    <div class="flex items-center mb-4 ">
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
                         <div
-                            class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex            items-center justify-center text-white font-bold text-lg mr-4">
-                            AR
-                        </div>
-                        <div class="text-left ">
-                            <h3 class="font-semibold text-white">A. Rahman</h3>
-                            <p class="text-sm text-slate-300">CEO — Webify</p>
+                            class="w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-500/30 max-w-md">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg mr-4">
+                                    SK
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-white about-font  ">S. Khan</h3>
+                                    <p class="text-sm text-slate-300">Founder — TechHub</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed">"Amazing work! The design is clean and the
+                                functionality is flawless. Highly recommended for anyone looking for quality."</p>
+                            <div class="mt-3 text-yellow-400">★★★★★</div>
                         </div>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">“Rider transformed our old website into a
-                        modern,
-                        high-converting design. Super smooth communication and delivery.”</p>
-                    <div class="mt-3 text-yellow-400">★★★★★</div>
-                </div>
 
-                <!-- Card 3 -->
-                <div
-                    class=" w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white  hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:mr-10 shadow-lg  transform hover:-translate-y-2 hover:shadow-emerald-500/30 ">
-                    <div class="flex items-center mb-4 ">
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
                         <div
-                            class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex            items-center justify-center text-white font-bold text-lg mr-4">
-                            AR
-                        </div>
-                        <div class="text-left ">
-                            <h3 class="font-semibold text-white">A. Rahman</h3>
-                            <p class="text-sm text-slate-300">CEO — Webify</p>
+                            class="w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-500/30 max-w-md">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg mr-4">
+                                    MH
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-white about-font  ">M. Hasan</h3>
+                                    <p class="text-sm text-slate-300">Director — Digital Pro</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed">"Professional service from start to
+                                finish. The team understood our vision perfectly and delivered beyond expectations."</p>
+                            <div class="mt-3 text-yellow-400">★★★★★</div>
                         </div>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">“Rider transformed our old website into a
-                        modern,
-                        high-converting design. Super smooth communication and delivery.”</p>
-                    <div class="mt-3 text-yellow-400">★★★★★</div>
-                </div>
 
-                <!-- Card 4 -->
-                <div
-                    class=" w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white  hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:mr-10 shadow-lg  transform hover:-translate-y-2 hover:shadow-emerald-500/30 sm:!block md:!hidden ">
-                    <div class="flex items-center mb-4 ">
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
                         <div
-                            class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex            items-center justify-center text-white font-bold text-lg mr-4">
-                            AR
-                        </div>
-                        <div class="text-left ">
-                            <h3 class="font-semibold text-white">A. Rahman</h3>
-                            <p class="text-sm text-slate-300">CEO — Webify</p>
+                            class="w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-500/30 max-w-md">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg mr-4">
+                                    FA
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-white about-font  ">F. Ahmed</h3>
+                                    <p class="text-sm text-slate-300">Manager — StartupX</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed">"Incredible attention to detail and fast
+                                turnaround time. Our website looks stunning and performs even better!"</p>
+                            <div class="mt-3 text-yellow-400">★★★★★</div>
                         </div>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">“Rider transformed our old website into a
-                        modern,
-                        high-converting design. Super smooth communication and delivery.”</p>
-                    <div class="mt-3 text-yellow-400">★★★★★</div>
-                </div>
-                <!-- Card 5 -->
-                <div
-                    class=" w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white  hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 md:mr-10 shadow-lg  transform hover:-translate-y-2 hover:shadow-emerald-500/30 sm:!block md:!hidden ">
-                    <div class="flex items-center mb-4 ">
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide">
                         <div
-                            class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex            items-center justify-center text-white font-bold text-lg mr-4">
-                            AR
-                        </div>
-                        <div class="text-left ">
-                            <h3 class="font-semibold text-white">A. Rahman</h3>
-                            <p class="text-sm text-slate-300">CEO — Webify</p>
+                            class="w-[100%] h-[230px] md:max-w-auto md:max-h-auto review-card bg-white hover:shadow-xl transition-all duration-300 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-500/30 max-w-md">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg mr-4">
+                                    NI
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-white about-font ">N. Islam</h3>
+                                    <p class="text-sm text-slate-300">Owner — BizSolutions</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed">"Best investment we made for our business.
+                                The website helped us increase conversions significantly!"</p>
+                            <div class="mt-3 text-yellow-400">★★★★★</div>
                         </div>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed">“Rider transformed our old website into a
-                        modern,
-                        high-converting design. Super smooth communication and delivery.”</p>
-                    <div class="mt-3 text-yellow-400">★★★★★</div>
+
                 </div>
 
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"> </div>
+
+                <!-- Autoplay Progress -->
+                <div class="autoplay-progress ">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- contact me section -->
+    <section class="py-14 flex items-center flex-col relative z-10 about-font " id="Contact">
+        <div class=" max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-4xl text-white font-bold text-center mb-10 relative about-font">Contact Me
+                <span class="block w-30 h-1 bg-emerald-400 mx-auto mt-3 lg:mt-5 rounded-full"></span>
+            </h2>
+        </div>
+        <div
+            class=" w-full max-w-6xl bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-2xl shadow-2xl p-8 md:p-12 relative">
+
+            <!-- Main Content -->
+            <div class=" grid md:grid-cols-2 gap-10 items-center">
+
+                <!-- Left Side -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Let's Connect</h3>
+                    <p class="text-gray-400 mb-8">I’m always excited to connect with passionate minds! Whether it’s a
+                        project idea, collaboration, or just a friendly hello, I’m here to listen and bring your vision
+                        to life. Let’s create something amazing together—reach out and let’s start a conversation that
+                        matters.</p>
+
+                    <!-- Contact Info -->
+                    <div class="space-y-3">
+                        <a href="tel:+8801316520600"
+                            class="flex items-center gap-4 bg-gray-800 hover:bg-gray-700 rounded-xl p-4 transition">
+                            <div class="w-10 h-10 flex items-center justify-center bg-gray-900 rounded-full">
+                                📞
+                            </div>
+                            <span class="text-gray-200">+8801316520600</span>
+                        </a>
+
+                        <a href="mailto:abujisan013@gmail.com"
+                            class="flex items-center gap-4 bg-gray-800 hover:bg-gray-700 rounded-xl p-4 transition">
+                            <div class="w-10 h-10 flex items-center justify-center bg-gray-900 rounded-full">
+                                ✉️
+                            </div>
+                            <span class="text-gray-200">abujisan013@gmail.com</span>
+                        </a>
+
+                        <a href="https://wa.me/8801316520600" target="_blank"
+                            class="flex items-center gap-4 bg-gray-800 hover:bg-gray-700 rounded-xl p-4 transition-all duration-300">
+                            <!-- Icon Circle -->
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-green-800 rounded-full text-white text-xl">
+                                💬
+                            </div>
+
+                            <!-- Number Text -->
+                            <span class="text-white font-medium">+8801316520600</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="flex justify-center">
+                    <div
+                        class="relative w-56 h-56 rounded-full overflow-hidden border-4 border-indigo-500 shadow-lg hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=500" alt="Your Photo"
+                            class="w-full h-full object-cover">
+                    </div>
+                </div>
             </div>
 
-            <!-- Next Button (Only on Mobile) -->
-            <div class="block sm:hidden mt-8">
-                <button id="nextBtn"
-                    class="px-6 py-2 bg-indigo-600 text-white font-semibold rounded-full shadow hover:bg-indigo-700 transition">Next</button>
+            <!-- Social Media inside Card -->
+            <div class="flex justify-center mt-10 space-x-6">
+                <a href="https://www.facebook.com/people/Abu-Jisan/61570969023641/"
+                    class="bg-gray-800 hover:bg-indigo-500 p-2 rounded-full transition transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-10 h-10 text-white"
+                        fill="currentColor">
+                        <path
+                            d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z" />
+                    </svg>
+                </a>
+
+
+
+                <a href="https://www.instagram.com/jis9006/"
+                    class="bg-gray-800 hover:bg-pink-500 p-2 rounded-full transition transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="currentColor"
+                        viewBox="0 0 640 640">
+                        <path
+                            d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"
+                            d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1
+                    0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1-2.881 0 1.44 1.44 0 0 1 2.881 0z" />
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/jis9006/"
+                    class="bg-gray-800 hover:bg-blue-600 p-2 rounded-full transition transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="currentColor"
+                        viewBox="0 0 640 640">
+                        <path
+                            d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z" />
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
 
 
 
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 relative z-10">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+
+            <!-- Left: Brand / Name -->
+            <div class="mb-4 md:mb-0 text-center md:text-start">
+                <h1 class="text-xl font-bold tracking-wide">Md Abu Samin</h1>
+                <p class="text-gray-400 max-w-[200px] text-sm mt-1">Building clean & modern web experiences learning new
+                    every day</p>
+            </div>
+
+            <!-- Center: Navigation Links -->
+            <div class="flex space-x-6 md:ml-[-70px] mb-4 md:mb-0">
+                <ul class="flex gap-5 heading-font ">
+                    <li class=" heading-font text-gray-400 hover:text-white transition "><a href="#Home">Home</a></li>
+                    <li class=" heading-font text-gray-400 hover:text-white transition "><a
+                            href="#education">Education</a></li>
+                    <li class=" heading-font text-gray-400 hover:text-white transition  "><a href="#service">Service</a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+            <!-- Right: Social Icons -->
+            <div class="flex items-center gap-6 ">
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <!-- Facebook Icon -->
+                    <a href="https://www.facebook.com/50s.amin/" target="_blank"
+                        class="text-gray-400 hover:text-white transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22.675 0h-21.35C.596 0 0 .597 0 1.333v21.334C0 23.403.596 24 1.325 24h11.495v-9.294H9.692V11.07h3.128V8.414c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.794.716-1.794 1.765v2.313h3.587l-.467 3.637h-3.12V24h6.116c.73 0 1.324-.597 1.324-1.333V1.333C24 .597 23.405 0 22.675 0z" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/abu-samin-2135b0353/" target="_blank"
+                        class="text-gray-400 hover:text-white transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22.23 0H1.77C.79 0 0 .774 0 1.727v20.546C0 23.226.79 24 1.77 24h20.46c.98 0 1.77-.774 1.77-1.727V1.727C24 .774 23.21 0 22.23 0zM7.12 20.452H3.56V9h3.56v11.452zM5.34 7.433c-1.138 0-2.06-.924-2.06-2.062 0-1.138.922-2.062 2.06-2.062s2.06.924 2.06 2.062c0 1.138-.922 2.062-2.06 2.062zm15.112 13.02h-3.555v-5.604c0-1.336-.026-3.054-1.86-3.054-1.862 0-2.147 1.454-2.147 2.958v5.7h-3.555V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.602 0 4.266 2.37 4.266 5.448v6.293z" />
+                        </svg>
+                    </a>
+
+
+                    <!-- WhatsApp Icon -->
+                    <a href="https://wa.me/8801306705369" target="_blank"
+                        class="text-gray-400 hover:text-white transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.669.149-.198.297-.766.966-.939 1.162-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.654-1.958-.173-.198-.018-.306.131-.455.135-.135.297-.347.446-.52.149-.173.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.21-.242-.579-.487-.5-.669-.51-.173-.008-.373-.008-.573-.008s-.372.05-.566.248c-.198.198-.755.771-.755 1.882 0 1.109.769 2.744.875 2.933.099.198 1.5 2.289 3.644 3.209 1.142.493 1.61.658 2.16.796.907.211 1.737.181 2.392.109.587-.069 1.801-.574 2.058-1.127.257-.554.257-1.029.182-1.127-.074-.099-.273-.162-.573-.297z" />
+                            <path
+                                d="M12 2C6.486 2 2 6.486 2 12c0 2.113.553 4.081 1.514 5.774L2 22l4.267-1.414A9.956 9.956 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2z" />
+                        </svg>
+                    </a>
+
+
+            </div>
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="mt-6 border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+            &copy; 2025 Md abu samin <br> All rights reserved.
+        </div>
+    </footer>
 
 
 
 
-    <!-- 
-    <canvas id="particle-background-canvas" class="fixed top-0 left-0 w-full h-full z-0 pointer-events-none"></canvas> -->
+    <canvas id="particle-background-canvas" class="fixed top-0 left-0 w-full h-full z-0 pointer-events-none"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 
 
