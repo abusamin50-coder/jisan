@@ -17,9 +17,9 @@
 
     // Get particle count based on screen size
     function getParticleCount() {
-        if (window.innerWidth < 640) return 40;
-        if (window.innerWidth < 1024) return 75;
-        return 100;
+        if (window.innerWidth < 640) return 50;
+        if (window.innerWidth < 1024) return 70;
+        return 130;
     }
 
     // Particle class
@@ -173,15 +173,16 @@ document.addEventListener('DOMContentLoaded', function () {
 //
 
 // review section
-
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
+    loop: true,
+    speed: 2000,
     autoplay: {
-        delay: 4500,
+        delay: 3000,
         disableOnInteraction: false
     },
     pagination: {
