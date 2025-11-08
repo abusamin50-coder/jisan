@@ -38,7 +38,7 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    height: 70px;
+    height: 80px;
     position: relative;
     z-index: 100000;
     pointer-events: all;
@@ -240,7 +240,7 @@ nav {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px;
         flex-direction: column;
         background: rgba(0, 0, 0, 0.98);
         width: 100%;
@@ -259,7 +259,7 @@ nav {
 
     .nav-menu li {
         width: 100%;
-        padding: 15px 0;
+        padding: 20px 0;
     }
 
     .nav-menu li a {
@@ -297,7 +297,8 @@ nav {
     }
 
     .nav-menu {
-        top: 60px;
+        top: 20px;
+
     }
 
     .nav-menu li a {
